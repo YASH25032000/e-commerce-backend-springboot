@@ -49,7 +49,7 @@ public class PaymentController {
 		Order order=orderService.findOrderById(orderId);
 		 try {
 		      // Instantiate a Razorpay client with your key ID and secret
-		      RazorpayClient razorpay = new RazorpayClient("rzp_test_aDRiOJxD58RGWn", "dxOekBkJ77jrxqnFKG6BcxEF");
+		      RazorpayClient razorpay = new RazorpayClient("id", "secret");
 
 		      // Create a JSON object with the payment link request parameters
 		      JSONObject paymentLinkRequest = new JSONObject();
